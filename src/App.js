@@ -14,7 +14,7 @@ function App() {
   
   let url = ''
 
-  const wheather2 = (city) =>{
+  const changeWheather = (city) =>{
     setWheather(
       {...wheather,
       city: city
@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="wrapp">
       <div className='container'>
-        <Header changeWheather = {wheather2} data = {fetchData}/>
+        <Header changeWheather = {changeWheather} data = {fetchData}/>
         <Main wheatherInfo = {wheather}/>
       </div>
     </div>
