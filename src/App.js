@@ -25,7 +25,6 @@ function App() {
   const fetchData =  async () => {
     const resalt =  await fetch(url)
     const data = await resalt.json('')
-    console.log(data)
     setWheather({
       city: data.name,
       temperature: Math.floor(data.main.temp - 273),

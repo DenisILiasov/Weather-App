@@ -166,7 +166,7 @@ body{
 
 .main__container{
   display: grid;
-  grid-template-columns: 3fr 10fr;
+  grid-template-columns: 4fr 10fr;
   gap: 50px;
 }
 
@@ -259,6 +259,7 @@ body{
 }
 
 /**********************************************************************/
+
 @media(max-width: 776px){
   .header__darkOrWhite{
     margin: 0 5px 0 0;
@@ -296,4 +297,12 @@ body{
     margin: 0 0 20px 0;
   }
 
+}
+
+/************************************/
+@media(max-width: 850px){
+  .main__container{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
 }
